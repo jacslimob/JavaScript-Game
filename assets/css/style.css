@@ -1,0 +1,169 @@
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: rgb(112 189 201);
+    color: rgb(18 16 16);
+    width:100%;
+}
+
+
+
+.start {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+/* This is where the modal sits on the page*/
+.high-score {
+    display: none; 
+    justify-content: center;
+    position: absolute; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
+    
+    
+}
+
+.user-high-score {
+  display: none; 
+  justify-content: center;
+  position: absolute; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);  
+}
+
+.try-again {
+  display: none; 
+  justify-content: center;
+  position: absolute; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+    
+}
+
+.submit {
+  margin: auto;
+  padding: revert;
+  margin-top: 15px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(142, 175, 226);
+  border-radius: 10%;
+  padding: 75px;
+  width: 300px;
+  height: fit-content;
+}
+
+
+/*got this from codehim.com from this line to the end*/
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.wrapper {
+    width: 430px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 0px;
+}
+  
+#quiz {
+  background-color: #34495E;
+  padding-bottom: 60px;
+  width: 100%;
+  border-radius: 2%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ }
+  
+  #quiz > h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  
+  .questions {
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 20px;
+  }
+  
+  /* changed div to button */
+  .answers button {
+    padding: 10px 0 0 0;
+    font-size: 16px;
+  }
+  
+  .answers button:hover {
+    cursor: pointer;
+    color: #FBCB43;
+  }
+  
+  .answers {
+    padding: 0px 0 10px 0px;
+  }
+  
+  .answers button {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 15px;    
+  }
+  
+  .answers div:first-child {
+    border: none;
+  }
+  
+  .checker {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  .correct, .false {
+    background-color: #109D59;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  
+  .false {
+    background-color: #DC4437;
+  }

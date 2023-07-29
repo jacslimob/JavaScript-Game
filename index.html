@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jacob's Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+
+<body> 
+    <header class = "header"> 
+        <a id="highscore" href="#">HIGH SCORE</a>
+        <p class="time"></p>
+        
+    </header>
+
+    <nav class="start">
+            <button id = "myBtn" style="align-items: end";>Start</button>
+            <!--Found on freeCodeCamp website-->
+            <button type="button" onClick = "window.location.reload()">
+                Reload Page
+            </button>
+        </nav>
+    
+    <main class = "content">
+        
+
+        <!--got from codehim.com-->
+        <div class="wrapper">
+            <div id="quiz">
+              <h1>JavaScript quiz</h1>
+              
+              <p class="questions">Press start above to play!</p>
+              
+              <div class="answers"></div>         
+              
+              <div class="checkAnswers">
+                <h3>Correct?</h3>
+                <div class="checker">
+        
+                </div>
+              </div>
+            </div>
+        </div> 
+
+        
+        <!--Create modals for everything originally-->
+        <div class="high-score">
+            <div class="modal-content">
+                <h1>View High Scores</h1>
+                <table>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>---</td>
+                        <td>---</td>
+                    </tr>
+                </table>
+                
+
+                <footer>
+                <button id="close">Close</button>
+                </footer>
+            </div>
+        </div>
+         
+        
+        <div class="user-high-score">
+            <div class="modal-content">
+                <h1>Enter intials</h1>
+                <p id="score"></p>
+                <input id="text" type="text">
+                <button id="submit">Submit</button>
+               
+            </div>
+        </div>
+
+        <div class="try-again">
+            <div class="modal-content">
+                <h1>Game Over</h1>
+                <h1>Try Again</h1>
+                <footer>
+                    <button type="button" onClick = "window.location.reload()">
+                        Reload Page
+                    </button>
+                </footer>
+            </div> 
+        </div>
+
+    </main>
+    <!--Kept my original js file for comparison-->
+    <script src="./assets/js/alt.js"></script>
+</body>
+</html>
